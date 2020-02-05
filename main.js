@@ -21,9 +21,12 @@ let unsubscribe = null;
   unsubscribe = firestore.collection("post").onSnapshot(doc => {
     let innerHtml = "";
     doc.docs.forEach(docData => {
-      innerHtml += `<div class="text-center mt-4"><h2>${
-        docData.data().iam
-      }</h2><p>${docData.data().content}</p></div>`;
+      innerHtml += `<div class="card text-center mb-4" style="width: 18rem; margin:0 auto">
+      <div class="card-body">
+        <h5 class="card-title">${docData.data().iam}</h5>
+        <p class="card-text">${docData.data().content}</p>
+      </div>
+    </div>`;
     });
     tweetsHolder.innerHTML = innerHtml;
   });
@@ -75,6 +78,4 @@ form.addEventListener("submit", event => {
     : alert("Please fill in all the fields");
 });
 
-window.onclose(ev => {
-  unsubscribe();
-});
+window.onclose = unsubscribe;
