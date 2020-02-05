@@ -23,8 +23,8 @@ let unsubscribe = null;
     doc.docs.forEach(docData => {
       innerHtml += `<div class="card text-center mb-4" style="width: 18rem; margin:0 auto">
       <div class="card-body">
-        <h5 class="card-title">${docData.data().iam}</h5>
-        <p class="card-text">${docData.data().content}</p>
+        <h5 class="card-title">@ ${docData.data().iam}</h5>
+        <p class="card-text">👉> ${docData.data().content}</p>
       </div>
     </div>`;
     });
