@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Meowits | A Social Media For Purrr and Meows</title>
-    <meta
-      name="description"
-      content="A place for loving beings to share thoughts"
-    />
+    <title>Login</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -18,64 +14,61 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="mt-5">
-      <h1 class="header">
-        😇 Meowits 🐈
-      </h1>
-    </header>
-    <main class="mt-5">
-      <!-- meow form -->
-      <form class="meow-form text-center mb-4">
+    <main>
+      <h1 class="text-center mt-4">LOGIN | SIGN UP TO GET STARTED</h1>
+      <h3 class="text-center mb-4">LOGIN</h3>
+      <form class="login-form text-center mb-4">
         <div class="form-group">
           <input
-            type="text"
+            type="email"
             class="form-control"
-            placeholder="I am..😌"
-            name="iam"
+            placeholder="Email here..😌"
+            name="email"
             required
           />
         </div>
         <div class="form-group">
-          <textarea
+          <input
             class="form-control"
-            name="content"
-            rows="5"
-            placeholder="My thoughts 🙌"
+            name="password"
+            placeholder="Password here..🙌"
             required
-          ></textarea>
+          />
         </div>
-        <button type="submit" class="btn btn-primary">Send Meow 😻</button>
+        <button type="submit" class="btn btn-primary">Login 🤗</button>
       </form>
 
-      <!-- loading spinner -->
-      <div class="text-center loading">
-        <img src="./assets/loading svg/loading.svg" alt="loading.." />
-      </div>
+      <hr />
 
-      <!-- meowits twits goes here -->
-      <div class="tweets" id="content-tweets"></div>
+      <h3 class="text-center mb-4">SIGNUP</h3>
+      <form class="signup-form text-center mb-4">
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Email here..😌"
+            name="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            name="password"
+            placeholder="Password here..🙌"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            name="confirm-password"
+            placeholder="Confirm Password..👍"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Signup 🤗</button>
+      </form>
     </main>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyAfIIAV8gjfcUy_FxTlL9UQf4SY738c3F8",
-        authDomain: "meowits-c2102.firebaseapp.com",
-        databaseURL: "https://meowits-c2102.firebaseio.com",
-        projectId: "meowits-c2102",
-        storageBucket: "meowits-c2102.appspot.com",
-        messagingSenderId: "246200700153",
-        appId: "1:246200700153:web:1d609150e1f0223ba0a628"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
-    <script src="main.js"></script>
   </body>
 </html>

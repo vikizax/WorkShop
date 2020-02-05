@@ -15,6 +15,10 @@ let tweets = [];
 // firebase
 let unsubscribe = null;
 
+
+
+
+
 // IIFE
 (() => {
   // get the subs
@@ -28,7 +32,9 @@ let unsubscribe = null;
       </div>
     </div>`;
     });
+
     tweetsHolder.innerHTML = innerHtml;
+
   });
 })();
 

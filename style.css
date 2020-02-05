@@ -7,6 +7,16 @@
   width: 50%;
 }
 
+.login-form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.signup-form {
+  margin: 0 auto;
+  width: 50%;
+}
+
 input,
 textarea {
   text-align: center;
@@ -17,7 +27,7 @@ textarea {
 }
 
 ::placeholder {
-    text-align: center;
+  text-align: center;
 }
 
 ::-webkit-input-placeholder {
